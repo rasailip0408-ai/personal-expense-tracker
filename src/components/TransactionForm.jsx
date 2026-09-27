@@ -101,7 +101,7 @@ function TransactionForm({ onAddTransaction }) {
         <button type="submit">Add {type === 'expense' ? 'Expense' : 'Income'}</button>
       </div>
 
-      {error && <p className="form-error">{error}</p>}
+      {error && <p className="form-error" aria-live="polite">{error}</p>}
     </form>
   )
 }
