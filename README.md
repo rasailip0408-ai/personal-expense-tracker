@@ -47,3 +47,10 @@ npm run preview
 - No monthly summary view that groups past months separately (only the current month is tracked against the budget)
 - Categories are fixed rather than user-defined
 - Data is stored only in the current browser (no account/sync across devices)
+
+
+## Future Improvements 🚀
+
+- Add edit functionality for existing transactions
+- Add export options for expense data
+- Add more detailed monthly spending reports
