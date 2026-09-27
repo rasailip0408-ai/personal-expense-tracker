@@ -13,7 +13,7 @@ const ALL_CATEGORIES = [
 
 function FilterSortBar({ categoryFilter, onCategoryFilterChange, sortBy, onSortByChange }) {
   return (
-    <div className="filter-sort-bar">
+    <div className="filter-sort-bar" aria-label="Transaction filters and sorting">
       <select
         value={categoryFilter}
         onChange={(event) => onCategoryFilterChange(event.target.value)}
