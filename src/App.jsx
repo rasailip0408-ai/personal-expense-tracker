@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import Header from './components/Header.jsx'
 import Balance from './components/Balance.jsx'
 import TransactionForm from './components/TransactionForm.jsx'
@@ -12,6 +12,12 @@ import './index.css'
 function App() {
   const [transactions, setTransactions] = useLocalStorage('transactions', [])
   const [budget, setBudget] = useLocalStorage('monthlyBudget', null)
+
+useEffect(() => {
+  document.title = 'Personal Expense Tracker'
+}, [])
+
+
 
   const [categoryFilter, setCategoryFilter] = useState('All')
   const [sortBy, setSortBy] = useState('date-desc')
