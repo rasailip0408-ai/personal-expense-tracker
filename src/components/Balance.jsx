@@ -17,7 +17,7 @@ function Balance({ transactions }) {
     <div className="balance-card">
       <div className="balance-main">
         <span className="balance-label">Current Balance</span>
-        <span className={`balance-amount ${balance < 0 ? 'negative' : ''}`}>
+        <span aria-live="polite" className={`balance-amount ${balance < 0 ? 'negative' : ''}`}>
           {formatMoney(balance)}
         </span>
       </div>
